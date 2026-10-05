@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinePedia</title>
+</head>
+<body>
+    <h2>Registro</h2>
+     <form action="/crear_usuario" method="post">
+        <label for="input_nombre">Nombre: </label>
+        <input type="text" name="nombre">
+        <br>
+        <label for="input_apellido">Apellido: </label>
+        <input type="text" name="apellido">
+        <br>
+        <label for="input_email">E-mail: </label>
+        <input type="email" name="correo" id="correo" required>
+        <br>
+        <label for="clave">Contraseña:</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label for="confirmar">Conf.Contraseña:</label>
+        <input type="password" name="confirmar" id="confirmar" required>
+        <br>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>
