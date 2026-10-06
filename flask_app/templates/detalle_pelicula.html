@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="">inicio</a>
+    <a href="">Cerrar sesión</a>
+    <thead></thead>
+    <tbody>
+        <table border="2">
+            <tr>
+                <td>{{peliculas.pelicula}} <br>
+                <p>Publicado por: {{usuarios.nombre}}</p>
+                <p>Director: {{peliculas.director}}</p>
+                <p>Fecha: {{peliculas.fecha}}</p>
+                <p>Sinopsis: <textarea name="sinopsis" rows="4" cols="50"></textarea></p>
+                </td>
+            </tr>
+        </table>
+        <thead></thead>
+        <tbody>
+            <table border="1">
+                <tr>
+                    <td>
+                        <input type="text" name="comentario" placeholder="Escribe un comentario..."> <button type="submit">Enviar</button>
+                        <br>
+                        {{usuarios.nombre}}: {{usuarios_has_peliculas.comentarios}} {{created_at}}
+                        <br>
+                        {{usuarios.nombre}}: {{usuarios_has_peliculas.comentarios}} {{created_at}}
+                        <br>
+                        {{usuarios.nombre}}: {{usuarios_has_peliculas.comentarios}} {{created_at}}
+                        <br>
+                        <button>Borrar</button>
+                    </td>
+                </tr>
+            </table>
+        </tbody>
+    </body>
+</html>
